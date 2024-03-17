@@ -18,11 +18,11 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
 DEPENDS += "lzop-native bc-native"
 
 SRC_URI = "${KERNEL_SRC}"
-KERNEL_SRC ?= "git://github.com/nxp-imx/linux-imx.git;protocol=https;branch=${SRCBRANCH}"
+KERNEL_SRC ?= "git://github.com/windowxia/steven-linux-imx.git;protocol=https;branch=${SRCBRANCH}"
 KBRANCH = "${SRCBRANCH}"
-SRCBRANCH = "lf-6.6.y"
+SRCBRANCH = "main"
 LOCALVERSION = "-lts-next"
-SRCREV = "ccf0a99701a701fb48a04e31ffe3f9d585a8374a"
+SRCREV = "c4fda0835d96ab479cc1674173babcfef00491da"
 
 # PV is defined in the base in linux-imx.inc file and uses the LINUX_VERSION definition
 # required by kernel-yocto.bbclass.
