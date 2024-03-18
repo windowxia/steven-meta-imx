@@ -8,10 +8,10 @@ LICENSE = "GPL-2.0-only"
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
 
 SRC_URI = "${KERNEL_SRC}"
-KERNEL_SRC ?= "git://github.com/windowxia/steven-linux-imx.git;protocol=https;branch=${SRCBRANCH}"
-SRCBRANCH = "main"
+KERNEL_SRC ?= "git://github.com/windowxia/linux-imx.git;protocol=https;branch=${SRCBRANCH}"
+SRCBRANCH = "lf-6.6.y"
 LOCALVERSION = "-lts-${SRCBRANCH}"
-SRCREV = "c4fda0835d96ab479cc1674173babcfef00491da"
+SRCREV = "${AUTOREV}"
 
 S = "${WORKDIR}/git"
 
